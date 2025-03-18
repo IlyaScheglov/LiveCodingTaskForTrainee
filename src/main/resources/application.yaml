@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: LiveCodingTask
+  datasource:
+    url: jdbc:postgresql://localhost:5432/LIVE_CODING_DB?prepareThreshold=0
+    username: LIVE_CODING_DB
+    password: LIVE_CODING_DB
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 25
