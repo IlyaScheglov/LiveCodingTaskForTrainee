@@ -1,0 +1,94 @@
+{
+  "uuid": "ca27e9fe-ed18-44bd-bbe3-0a3e49438e13",
+  "lastMigration": 33,
+  "name": "Second",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3002,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "05151796-7ce4-45a1-af28-d178d5e84ec2",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "api/v1/second",
+      "responses": [
+        {
+          "uuid": "b80ffb9b-ef1d-43c5-a69a-c1a42b0ffd98",
+          "body": "[\n  {\n    \"name\": \"Облига\",\n    \"nominal\": 1000,\n    \"percent\": 58.9,\n    \"currency\": \"RUB\",\n    \"issuerName\": \"ВТБ\",\n    \"issuerInn\": \"7702070139\"\n  },\n  {\n    \"name\": \"Облига 2\",\n    \"nominal\": 10000,\n    \"percent\": 75,\n    \"currency\": \"CNY\",\n    \"issuerName\": \"Сбер\",\n    \"issuerInn\": \"7707083893\"\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "05151796-7ce4-45a1-af28-d178d5e84ec2"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}

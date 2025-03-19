@@ -1,0 +1,94 @@
+{
+  "uuid": "d38368dd-1ab5-4e86-b308-76fac93a7fbd",
+  "lastMigration": 33,
+  "name": "First",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "31ce4df8-c981-4af1-8981-4e9306da6e36",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "api/v1/first",
+      "responses": [
+        {
+          "uuid": "21de550b-c449-4f02-84d6-a2b4f8437e6f",
+          "body": "[\n  {\n    \"name\": \"Очень выгодный вклад\",\n    \"amount\": 12000,\n    \"currency\": \"RUB\",\n    \"issuer\": {\n      \"name\": \"ВТБ\",\n      \"inn\": \"7702070139\"\n    }\n  },\n  {\n    \"name\": \"Very ggod vklad\",\n    \"amount\": 100,\n    \"currency\": \"USD\",\n    \"issuer\": {\n      \"name\": \"ВТБ\",\n      \"inn\": \"7702070139\"\n    }\n  },\n  {\n    \"name\": \"Сбертян\",\n    \"amount\": 111111,\n    \"currency\": \"RUB\",\n    \"issuer\": {\n      \"name\": \"Сбер\",\n      \"inn\": \"7707083893\"\n    }\n  }\n]",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null,
+      "streamingMode": null,
+      "streamingInterval": 0
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "31ce4df8-c981-4af1-8981-4e9306da6e36"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}

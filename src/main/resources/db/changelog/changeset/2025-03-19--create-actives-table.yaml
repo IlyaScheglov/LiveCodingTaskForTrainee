@@ -1,0 +1,44 @@
+databaseChangeLog:
+  - changeSet:
+      id: 2
+      author: IlyaScheglov
+      changes:
+        - createTable:
+            tableName: actives
+            columns:
+              - column:
+                  name: id
+                  type: uuid
+                  constraints:
+                    primaryKey: true
+              - column:
+                  name: name
+                  type: varchar(100)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: active_type
+                  type: varchar(10)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: balance
+                  type: number(15, 2)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: currency
+                  type: char(3)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: issuer_id
+                  type: uuid
+                  constraints:
+                    nullable: false
+        - addForeignKeyConstraint:
+            baseColumnNames: issuer_id
+            baseTableName: actives
+            constraintName: FK_ACTIVES_ISSUER_ID_ON_ISSUERS
+            referencedColumnNames: id
+            referencedTableName: issuers

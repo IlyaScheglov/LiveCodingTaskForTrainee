@@ -1,0 +1,134 @@
+databaseChangeLog:
+  -  changeSet:
+       id: 3
+       author:  IlyaScheglov
+       changes:
+         -  insert:
+              tableName:  issuers
+              columns:
+                -  column:
+                     name:  id
+                     value:  '0c5b0ec7-be30-4808-981e-1d83586bd12d'
+                -  column:
+                     name:  name
+                     value:  'ВТБ'
+                -  column:
+                     name:  inn
+                     value:  '7702070139'
+         - insert:
+             tableName: issuers
+             columns:
+               - column:
+                   name: id
+                   value: '9c7d1e93-a923-4520-9fda-4a6afbc7cb6c'
+               - column:
+                   name: name
+                   value: 'Сбер'
+               - column:
+                   name: inn
+                   value: '7707083893'
+         - insert:
+             tableName: actives
+             columns:
+               - column:
+                   name: id
+                   value: '8de7cb6c-2f4a-4970-9d8f-f0b36eeef0f2'
+               - column:
+                   name: name
+                   value: 'Очень выгодный вклад'
+               - column:
+                   name: active_type
+                   value: 'FIRST'
+               - column:
+                   name: balance
+                   value: 12000
+               - column:
+                   name: currency
+                   value: 'RUB'
+               - column:
+                   name: issuer_id
+                   value: '0c5b0ec7-be30-4808-981e-1d83586bd12d'
+         - insert:
+             tableName: actives
+             columns:
+               - column:
+                   name: id
+                   value: '50505c89-a5af-4c29-8346-b5ada3d61a22'
+               - column:
+                   name: name
+                   value: 'Very ggod vklad'
+               - column:
+                   name: active_type
+                   value: 'FIRST'
+               - column:
+                   name: balance
+                   value: 100
+               - column:
+                   name: currency
+                   value: 'USD'
+               - column:
+                   name: issuer_id
+                   value: '0c5b0ec7-be30-4808-981e-1d83586bd12d'
+         - insert:
+             tableName: actives
+             columns:
+               - column:
+                   name: id
+                   value: '27315eb3-59b3-4b07-93ec-c990ffc68ea3'
+               - column:
+                   name: name
+                   value: 'Сбертян'
+               - column:
+                   name: active_type
+                   value: 'FIRST'
+               - column:
+                   name: balance
+                   value: 111111
+               - column:
+                   name: currency
+                   value: 'RUB'
+               - column:
+                   name: issuer_id
+                   value: '9c7d1e93-a923-4520-9fda-4a6afbc7cb6c'
+         - insert:
+             tableName: actives
+             columns:
+               - column:
+                   name: id
+                   value: 'cd2fd9df-e846-4425-9f13-77dfc10e6374'
+               - column:
+                   name: name
+                   value: 'Облига'
+               - column:
+                   name: active_type
+                   value: 'SECOND'
+               - column:
+                   name: balance
+                   value: 589
+               - column:
+                   name: currency
+                   value: 'RUB'
+               - column:
+                   name: issuer_id
+                   value: '0c5b0ec7-be30-4808-981e-1d83586bd12d'
+         - insert:
+             tableName: actives
+             columns:
+               - column:
+                   name: id
+                   value: 'f623b524-7d8b-4752-b86c-20c08623e95c'
+               - column:
+                   name: name
+                   value: 'Облига 2'
+               - column:
+                   name: active_type
+                   value: 'SECOND'
+               - column:
+                   name: balance
+                   value: 7500
+               - column:
+                   name: currency
+                   value: 'CNY'
+               - column:
+                   name: issuer_id
+                   value: '9c7d1e93-a923-4520-9fda-4a6afbc7cb6c'
